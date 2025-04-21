@@ -48,10 +48,12 @@ config/
 *.ipynb
 requirements.txt
 
+# Model file
+network-final.pkl
+
 # Generated images (optional - uncomment if you don't want to track generated images)
 # generated_images/
 
 # Keep these
 !stylegan2-ada-pytorch/
-!generate.py
-!network-final.pkl 
+!generate.py 
