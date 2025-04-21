@@ -10,17 +10,11 @@ git clone https://github.com/JackDSnyder/stylegan2-face-generation.git
 cd stylegan2-face-generation
 ```
 
-2. Install Git LFS:
-```bash
-git lfs install
-```
+2. Download the trained model:
+   - Download `network-final.pkl` from [Google Drive](https://drive.google.com/file/d/1wAvHUcJqC7XQVMyISsYqNOjbs91NTZF0/view?usp=sharing)
+   - Place it in the root directory of the project
 
-3. Pull the model file:
-```bash
-git lfs pull
-```
-
-4. Install required dependencies:
+3. Install required dependencies:
 ```bash
 pip install torch torchvision
 ```
@@ -39,10 +33,9 @@ This will generate 10 images by default. You can modify the script to change:
 
 ## Model
 
-The trained model (`network-final.pkl`) is stored using Git LFS due to its large size (333MB).
+The trained model (`network-final.pkl`) is stored separately due to its large size (333MB). You can download it from the Google Drive link above.
 
 ## Requirements
 
 - Python 3.6+
-- PyTorch with CUDA support (for GPU acceleration)
-- Git LFS (for handling large model files) 
+- PyTorch with CUDA support (for GPU acceleration) 
