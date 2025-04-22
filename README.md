@@ -6,7 +6,7 @@ This project uses StyleGAN2-ADA to generate realistic face images. It's a simpli
 
 1. Clone this repository:
 ```bash
-git clone [https://github.com/JackDSnyder/stylegan2-face-generation.git]
+git clone https://github.com/JackDSnyder/stylegan2-face-generation.git
 cd stylegan2-face-generation
 ```
 
