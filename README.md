@@ -6,7 +6,7 @@ This project uses StyleGAN2-ADA to generate realistic face images. It's a simpli
 
 1. Clone this repository:
 ```bash
-git clone [your-repo-url]
+git clone [https://github.com/JackDSnyder/stylegan2-face-generation.git]
 cd stylegan2-face-generation
 ```
 
@@ -27,13 +27,13 @@ pip install -r requirements.txt
 
 2. Run the generation script:
 ```bash
-python generate.py
+python3 generate.py
 ```
 
 This will:
 - Generate 10 images by default
 - Save them in the `generated_images` directory
-- Use seeds 0-9
+- Use seeds 0-9 by default
 - Use a truncation value of 0.7 for balanced quality/diversity
 
 ### Customization
@@ -43,13 +43,6 @@ You can modify the following parameters in `generate.py`:
 - `start_seed`: Starting seed number
 - `truncation`: Controls variation vs. quality (lower = more average/higher quality)
 - `output_dir`: Where to save generated images
-
-## Notes
-
-- The generated images will be saved in the `generated_images` directory
-- A truncation value of 0.7 provides a good balance between quality and diversity
-- Lower truncation values (e.g., 0.5) produce more consistent, higher quality faces
-- Higher truncation values (e.g., 0.8-1.0) produce more diverse but potentially lower quality faces
 
 ## Model
 
