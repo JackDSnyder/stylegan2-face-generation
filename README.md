@@ -1,35 +1,55 @@
 # StyleGAN2 Face Generation
 
-This project uses StyleGAN2-ADA to generate realistic face images. It includes a trained model and a script to generate new faces.
+This project uses StyleGAN2-ADA to generate realistic face images. It's a simplified interface for generating images using a pre-trained model.
 
 ## Setup
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/JackDSnyder/stylegan2-face-generation.git
+git clone [your-repo-url]
 cd stylegan2-face-generation
 ```
 
-2. Download the trained model:
-   - Download `network-final.pkl` from [Google Drive](https://drive.google.com/file/d/1wAvHUcJqC7XQVMyISsYqNOjbs91NTZF0/view?usp=sharing)
-   - Place it in the root directory of the project
-
-3. Install required dependencies:
+2. Create and activate a virtual environment:
 ```bash
-pip install torch torchvision
+python3 -m venv venv
+source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+```
+
+3. Install required packages:
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage
 
-To generate images, run:
+1. Make sure you have a trained model file (e.g., `network-final.pkl`) in the project directory.
+
+2. Run the generation script:
 ```bash
 python generate.py
 ```
 
-This will generate 10 images by default. You can modify the script to change:
-- Number of images to generate
-- Starting seed number
-- Truncation value (controls image quality/variation)
+This will:
+- Generate 10 images by default
+- Save them in the `generated_images` directory
+- Use seeds 0-9
+- Use a truncation value of 0.7 for balanced quality/diversity
+
+### Customization
+
+You can modify the following parameters in `generate.py`:
+- `num_images`: Number of images to generate
+- `start_seed`: Starting seed number
+- `truncation`: Controls variation vs. quality (lower = more average/higher quality)
+- `output_dir`: Where to save generated images
+
+## Notes
+
+- The generated images will be saved in the `generated_images` directory
+- A truncation value of 0.7 provides a good balance between quality and diversity
+- Lower truncation values (e.g., 0.5) produce more consistent, higher quality faces
+- Higher truncation values (e.g., 0.8-1.0) produce more diverse but potentially lower quality faces
 
 ## Model
 

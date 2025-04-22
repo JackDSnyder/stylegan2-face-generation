@@ -31,7 +31,6 @@ data/
 checkpoints/
 config/
 *.ipynb
-requirements.txt
 
 # Model file
 network-final.pkl

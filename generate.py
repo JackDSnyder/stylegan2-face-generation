@@ -35,8 +35,8 @@ if __name__ == '__main__':
     
     # Set your parameters here
     network_path = 'network-final.pkl'  # Path to your trained model
-    num_images = 50  # Number of images to generate
-    start_seed = 100  # Starting seed number
+    num_images = 10  # Number of images to generate
+    start_seed = 0  # Starting seed number
     truncation = 0.7  # Controls variation vs. quality (lower = more average/higher quality)
     output_dir = 'generated_images'  # Where to save generated images
     
