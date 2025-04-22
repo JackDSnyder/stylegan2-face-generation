@@ -13,7 +13,7 @@ cd stylegan2-face-generation
 2. Create and activate a virtual environment:
 ```bash
 python3 -m venv venv
-source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+source venv/bin/activate
 ```
 
 3. Install required packages:
@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Make sure you have a trained model file (e.g., `network-final.pkl`) in the project directory.
+1. Make sure you have a trained model file (`network-final.pkl`) in the project directory.
 
 2. Run the generation script:
 ```bash
